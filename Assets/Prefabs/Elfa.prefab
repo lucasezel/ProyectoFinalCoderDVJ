@@ -1985,6 +1985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3675858376873931580, guid: b2bcc0397ac56c7449003355bd2d5c8a, type: 3}
+  elfa: {fileID: 7914729184969582894}
   velocidad: 0
   proximidad: 0
 --- !u!95 &-3085542922387856104

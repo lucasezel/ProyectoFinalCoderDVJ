@@ -14,14 +14,14 @@ public class Elfa : MonoBehaviour
     void Start()
     {
         velocidad = 2f;
-        GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
         MirarYSeguir();
-        GameObject.FindGameObjectWithTag("Player");
+
     }
 
     public void MirarYSeguir()

@@ -14,6 +14,7 @@ public class Zombie : MonoBehaviour
     void Start()
     {
         velocidad = 0.5f;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
