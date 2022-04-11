@@ -8,7 +8,6 @@ public class Camaras : MonoBehaviour
     public GameObject camaraPrincipal;
     public GameObject camaraFrontal;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,17 +22,19 @@ public class Camaras : MonoBehaviour
 
     void CambioDeCamara()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        var inputValue = Input.inputString;
+        switch (inputValue)
         {
-            camaraPrincipal.SetActive(true);
-            camaraFrontal.SetActive(false);
+            case ("1"):
+                camaraPrincipal.SetActive(true);
+                camaraFrontal.SetActive(false);
+                break;
+            case ("2"):
+                camaraFrontal.SetActive(true);
+                camaraPrincipal.SetActive(false);
+                break;
+            default:
+                break;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            camaraFrontal.SetActive(true);
-            camaraPrincipal.SetActive(false);
-        }
-
-    
     }
 }
